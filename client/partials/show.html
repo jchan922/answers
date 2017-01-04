@@ -1,0 +1,51 @@
+<style>
+    ul {
+        padding: 0px;
+    }
+
+    #ul_top {
+        list-style: none;
+    }
+        #ul_top li{
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+    #ul_done{
+        list-style: none;
+    }
+
+    #ul_pending{
+        list-style: none;
+    }
+
+    div {
+        margin-bottom: 25px;
+    }
+        p {
+            margin: 0px;
+        }
+
+</style>
+<title>Q + A</title>
+<div ng-controller="showController">
+
+    <ul id="ul_top">
+        <li><a href="#/dashboard">Home</a> | <a href="#/answer/{{question._id}}">Answer This Question</a></li>
+        <li><a href="#" ng-click="logout()">Log-Out</a></li>
+    </ul>
+
+    <h1>{{question.question}}</h1>
+    <h2>{{question.description}}</h2>
+
+    <div ng-repeat="answer in answers | orderBy:'-likes' ">
+        <p><b>{{answer._creator.name}}:</b></p>
+        <p>Answer: {{answer.answer}}</p>
+        <p>{{answer.details}} </p>
+        <p>Likes: {{answer.likes}}</p>
+        <button type="button" ng-click="increaseLikes(answer._id)">Like!</button>
+    </div>
+
+    <!-- <p style="color:red;">{{test}}</p> -->
+
+</div>

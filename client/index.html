@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- Angular from bower_components, otherwise find the CDN -->
+        <script src ="angular/angular.js"></script>
+        <script src ="angular-route/angular-route.js"></script>
+        <!-- Angular from assets -->
+        <script src ="assets/app.js" charset="utf-8"></script>
+        <script src ="assets/controllers/loginController.js" charset="utf-8"></script>
+        <script src ="assets/controllers/dashboardController.js" charset="utf-8"></script>
+        <script src ="assets/controllers/showController.js" charset="utf-8"></script>
+        <script src ="assets/controllers/answerController.js" charset="utf-8"></script>
+        <script src ="assets/controllers/questionController.js" charset="utf-8"></script>
+        <script src ="assets/factories/usersFactory.js" charset="utf-8"></script>
+        <script src ="assets/factories/questionsFactory.js" charset="utf-8"></script>
+    </head>
+    <style>
+        html {
+            width: 1336px;
+            margin: 0px auto;
+            font-family: helvetica;
+        }
+    </style>
+    <body ng-app="app">
+        <div ng-view=""></div>
+    </body>
+</html>

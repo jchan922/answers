@@ -1,0 +1,83 @@
+<style>
+    ul {
+        padding: 0px;
+    }
+
+    #ul_top {
+        list-style: none;
+    }
+        #ul_top li{
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+    #ul_bookmark{
+        list-style: none;
+    }
+
+    #ul_bottom{
+        list-style: none;
+    }
+
+    #search_bar{
+        width: 300px;
+    }
+
+    label {
+        display: block;
+        margin-top: 25px;
+    }
+
+    table {
+        margin-top: 15px;
+        text-align: left;
+    }
+
+        th:nth-child(1){
+            width: 400px;
+        }
+        td:nth-child(1){
+            width: 400px;
+        }
+
+        th:nth-child(2){
+            width: 100px;
+        }
+        td:nth-child(2){
+            width: 100px;
+        }
+
+        th:nth-child(3){
+            width: 200px;
+        }
+        td:nth-child(3){
+            width: 200px;
+        }
+</style>
+<title>Home</title>
+<div ng-controller="dashboardController">
+    <ul id="ul_top">
+        <li><a href="#/dashboard">Home</a></li>
+        <li><a href="#" ng-click="logout()">Log-Out</a></li>
+    </ul>
+
+    <h1>Hi, {{current_user.name}}!</h1>
+    <a href="#/question">Add A Question</a>
+    <label> Search by Question: <input id="search_bar" type="text" ng-model="filter_question"></label>
+
+    <table>
+        <tr>
+            <th>Question</th>
+            <th>Answers</th>
+            <th>Action</th>
+        </tr>
+        <tr ng-repeat="question in allQuestions | filter:filter_question">
+            <td>{{question.question}}</td>
+            <td>{{question.answers.length}}</td>
+            <td><a href="#/show/{{question._id}}">Show</a> | <a href="#/answer/{{question._id}}">Answer</a></td>
+        </tr>
+    </table>
+
+    <!-- <p style="color:red;">{{test}}</p> -->
+
+</div>

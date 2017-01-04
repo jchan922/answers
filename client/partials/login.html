@@ -1,0 +1,24 @@
+<style media="screen">
+    p {
+        color: red;
+    }
+</style>
+<div ng-controller="loginController">
+    <h1 style="text-align:left">LOGIN AND REG</h1>
+    <p ng-repeat="error in regErrors">{{error.message}}</p>
+    <form ng-submit="registerUser()">
+        <h4>Register Admin!</h4>
+        <label style="display:block;">Name: <input type="text" ng-model="regUser.name"></label>
+        <label style="display:block;">Email: <input type="email" ng-model="regUser.email"></label>
+        <label style="display:block;">Password: <input type="password" ng-model="regUser.password"></label>
+        <label style="display:block;">Password Confirmation: <input type="password" ng-model="regUser.passwordConf"></label>
+        <input type="submit" value="Register!">
+    </form>
+    <p ng-repeat="error in loginErrors">{{error.message}}</p>
+    <form ng-submit="loginUser(loginUserAttempt)">
+        <h4>Admin Log-In!</h4>
+        <label style="display:block;">Email: <input type="text" ng-model="loginUserAttempt.email"></label>
+        <label style="display:block;">Password: <input type="password" ng-model="loginUserAttempt.password"></label>
+        <input type="submit" value="Login!">
+    </form>
+</div>
