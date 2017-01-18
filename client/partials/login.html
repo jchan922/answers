@@ -1,24 +1,67 @@
-<style media="screen">
-    p {
-        color: red;
-    }
-</style>
-<div ng-controller="loginController">
-    <h1 style="text-align:left">LOGIN AND REG</h1>
-    <p ng-repeat="error in regErrors">{{error.message}}</p>
-    <form ng-submit="registerUser()">
-        <h4>Register Admin!</h4>
-        <label style="display:block;">Name: <input type="text" ng-model="regUser.name"></label>
-        <label style="display:block;">Email: <input type="email" ng-model="regUser.email"></label>
-        <label style="display:block;">Password: <input type="password" ng-model="regUser.password"></label>
-        <label style="display:block;">Password Confirmation: <input type="password" ng-model="regUser.passwordConf"></label>
-        <input type="submit" value="Register!">
-    </form>
-    <p ng-repeat="error in loginErrors">{{error.message}}</p>
-    <form ng-submit="loginUser(loginUserAttempt)">
-        <h4>Admin Log-In!</h4>
-        <label style="display:block;">Email: <input type="text" ng-model="loginUserAttempt.email"></label>
-        <label style="display:block;">Password: <input type="password" ng-model="loginUserAttempt.password"></label>
-        <input type="submit" value="Login!">
-    </form>
+<div class="login-partial" ng-controller="loginController">
+
+    <div class="header">
+        <div class="main-container">
+            <div class="main-headline-textbox">
+                <h1>QA</h1>
+                <h2>Ask questions.</h2>
+                <h2>Get <span id="answers-underline">answers</span>.</h2>
+            </div>
+            <div class="main-login-container">
+                <h3>Log-In!</h3>
+
+                <form class="login-form" ng-submit="loginUser(loginUserAttempt)">
+                    <label>Email: <input type="text" ng-model="loginUserAttempt.email"></label>
+                    <label>Password: <input type="password" ng-model="loginUserAttempt.password"></label>
+                    <input class="btn login-button" type="submit" value="Login">
+                </form>
+
+                <p class="error-message" ng-repeat="error in loginErrors">{{error.message}}</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="product-description">
+        <h2>Join our community of curious thinkers.</h2>
+        <h3>Latest Question: <span class="latest-question">"Why is the sky blue?"</span></h3>
+
+
+        <div class="product-description-list">
+            <div class="product-function">
+                <h4>Search our database</h4>
+                <p>See what the most popular questions currently are and instantly find answers to the question on your mind.</p>
+            </div>
+            <div class="product-function">
+                <h4>Ask the group</h4>
+                <p>Pose a question to the community and we'll all help you find the answer. Or answers.</p>
+            </div>
+            <div class="product-function">
+                <h4>Contribute</h4>
+                <p>Join in on a convseration. Provide some answers or vote up the best ones. The most popular questions are featured everyday.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- MODAL -->
+    <!-- <div class="logreg">
+        <div class="register-container">
+            <p class="error-message" ng-repeat="error in regErrors">{{error.message}}</p>
+            <form ng-submit="registerUser()">
+                <h4>Register!</h4>
+                <label>Name: <input type="text" ng-model="regUser.name"></label>
+                <label>Email: <input type="email" ng-model="regUser.email"></label>
+                <label>Password: <input type="password" ng-model="regUser.password"></label>
+                <label>Password Confirmation: <input type="password" ng-model="regUser.passwordConf"></label>
+                <input type="submit" value="Register!">
+            </form>
+        </div>
+    </div> -->
+
+
 </div>
