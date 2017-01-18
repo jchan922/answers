@@ -45,15 +45,15 @@
             }
 
                 #answers-underline {
-                    border-bottom: 1px solid red;
+                    border-bottom: 1px solid #EF5350;
                 }
 
 
         .main-login-container {
             display: inline-block;
-            height: 150px;
-            margin: 0px;
-            padding: 10px 0px;
+            height: 220px;
+            margin: 0;
+            padding: 15px 0 20px 0;
             background: rgba(255,255,255,1);
             background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
             background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(247,247,247,1)), color-stop(100%, rgba(240,240,240,1)));
@@ -68,6 +68,8 @@
         }
 
             .main-login-container h3{
+                margin: 0;
+                padding: 0;
                 text-align: center;
                 font-family: 'Quicksand', sans-serif;
                 font-size: 1.5rem;
@@ -76,7 +78,7 @@
             }
 
             .login-form {
-                margin: 0;
+                margin: 10px 0 0 0;
                 padding: 5px 10px;
                 display: flex;
                 flex-direction: column;
@@ -99,8 +101,8 @@
                 }
 
                 .login-form .login-button {
-                    height: 25px;
-                    margin-bottom: 5px;
+                    height: 35px;
+                    margin: 10px 0 5px 0;
                     padding: 0;
                     background-color: #0275D8;
                     font-family: 'Quicksand', sans-serif;
@@ -108,121 +110,196 @@
                     color: white;
                 }
 
-                .main-login-container p {
-                    text-align: center;
-                    margin: 0px;
-                    padding: 0px;
+                .login-form .register-button {
+                    height: 25px;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #EF5350;
                     font-family: 'Quicksand', sans-serif;
-                    font-weight: 600;
-                    font-size: 1rem;
-                    color: red;
+                    font-size: .85rem;
+                    color: white;
                 }
 
-
-.product-description {
-    width: 100%;
-    height: 35rem;
-    margin: 0 auto;
-    padding: 50px 0;
-    background: rgba(255,255,255,1);
-    background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(247,247,247,1)), color-stop(100%, rgba(240,240,240,1)));
-    background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
-    background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
-    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0', GradientType=1 );
-}
-
-    .product-description h2 {
-        width: 80%;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 2.5rem;
-        color: #009688;
-        opacity: .87;
-    }
-
-    .product-description h3 {
-        width: 80%;
-        margin: 50px auto 100px auto;
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: 300;
-        color: black;
-        opacity: .75;
-    }
-
-        .latest-question {
-            font-style: italic;
-            opacity: .65;
-        }
-
-
-    .product-description-list {
-        /*border: 2px solid red;*/
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: flex-start;
-        /*align-items: center;*/
-        flex-wrap: wrap;
-    }
-
-        .product-function {
-            /*border: 2px solid red;*/
-            border: 1px solid grey;
-            margin: 0px 5px;
-            padding: 10px;
-            text-align: center;
-            flex: 1;
-        }
-
-        .product-function h4{
-            border-bottom: 1px solid grey;
-            padding: 5px 0px;
-            color: #00796B;
-            font-size: 1.25rem;
-            opacity: .87;
-        }
-
-        .product-function p{
-            font-family: 'Roboto', sans-serif;
-            color: black;
-            font-size: .85rem;
-            opacity: .54;
-        }
-
-
-
-        /*.logreg {
-            border: 2px solid red;
-            width: 80%;
-            margin: 0px auto;
-            display: flex;
-        }
-
-            .error-message {
+            .main-login-container p {
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 600;
+                font-size: .75rem;
                 color: red;
             }
 
-            .logreg h4 {
-                margin: 0px;
-                padding: 0px;
-                color: black;
-                font-family: 'Quicksand', sans-serif;
-                font-weight: 400;
-                font-size: 50px;
+                /*REGISTER MODAL*/
+                #register-modal {
+                    font-family: 'Quicksand', sans-serif;
+                }
+
+                    #register-modal #error-message {
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+
+                    #register-modal-title {
+                        width: 100%;
+                        margin: 0 auto;
+                        padding: 0px;
+                        text-align: center;
+                        font-size: 1.5rem;
+                        color: black;
+                        opacity: .75;
+                    }
+
+                    #reg-form-list {
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    #reg-form-list li{
+                        list-style: none;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+                    }
+
+                    #reg-form-list > li > label {
+                        flex: 1 0 120px;
+                        max-width: 220px;
+                        font-size: 1rem;
+                    }
+
+
+                    #reg-submit-button {
+                        margin-top: 15px;
+                        margin-left: auto;
+                        height: 25px;
+                        width: 120px;
+                        max-width: 220px;
+                        border: none;
+                        border-radius: 5px;
+                        background: #00BFA5;
+                        color: white;
+                    }
+
+
+    .product-description {
+        width: 100%;
+        height: 35rem;
+        margin: 0 auto;
+        padding: 50px 0;
+        background: rgba(255,255,255,1);
+        background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(247,247,247,1)), color-stop(100%, rgba(240,240,240,1)));
+        background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
+        background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
+        background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
+        background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0', GradientType=1 );
+    }
+
+        .product-description h2 {
+            font-family: 'Quicksand', sans-serif;
+            width: 80%;
+            margin: 0 auto 25px auto;
+            text-align: center;
+            font-size: 2.5rem;
+            color: #009688;
+            opacity: .87;
+        }
+
+        .product-description h3 {
+            width: 75%;
+            margin: 25px auto 25px auto;
+            font-family: 'Roboto', sans-serif;
+            text-align: left;
+            font-size: 1.5rem;
+            font-weight: normal;
+            color: black;
+            opacity: .65;
+        }
+
+        #register-modal-large {
+            width: 20%;
+            margin: 25px 40% 50px 40%;
+        }
+
+        .product-description-list {
+            /*border: 2px solid red;*/
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+            .product-function {
+                /*border: 2px solid red;*/
+                border: 1px solid grey;
+                background-color: white;
+                margin: 0px 5px;
+                padding: 10px;
+                flex: 1;
+                -webkit-box-shadow: 3px 4px 15px -2px rgba(0,0,0,0.53);
+                -moz-box-shadow: 3px 4px 15px -2px rgba(0,0,0,0.53);
+                box-shadow: 3px 4px 15px -2px rgba(0,0,0,0.53);
             }
 
-            .register-container {
-                border: 2px solid blue;
-                width: 100%;
-                margin: 0px;
-                padding: 0px;
-                flex: 1px;
-            }*/
+            .product-function h4{
+                border-bottom: 1px solid grey;
+                font-family: 'Quicksand', sans-serif;
+                padding: 5px 0px;
+                text-align: center;
+                color: #00796B;
+                font-size: 1.25rem;
+                opacity: .87;
+            }
+
+            .product-function p{
+                text-align: left;
+                font-family: 'Roboto', sans-serif;
+                color: black;
+                font-size: .85rem;
+                opacity: .54;
+            }
+
+
+    .latest-question-container {
+        background-color: #00796B;
+        font-family: 'Quicksand', sans-serif;
+        padding: 75px 0;
+    }
+
+        .latest-question-container h2 {
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            opacity: 1;
+        }
+
+        #latest-question {
+            font-style: italic;
+            opacity: .75;
+        }
+
+
+    .footer {
+        border: 1px solid red;
+        background-color: white;
+        padding: 0;
+        margin: 0;
+    }
+
+        #copyright {
+            border: 1px solid red;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            font-size: .50rem;
+            opacity: .36;
+        }
 
 }
 
@@ -262,7 +339,7 @@
             }
 
                 #answers-underline {
-                    border-bottom: 1px solid red;
+                    border-bottom: 1px solid #EF5350;
                 }
 
         .main-login-container {
