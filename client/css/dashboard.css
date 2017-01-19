@@ -1,0 +1,282 @@
+
+@media only screen and (min-width: 768px) { /* For Desktop, large screens */
+
+
+    .navbar-container {
+        background-color: #1abc9c;
+    }
+
+        #navbar {
+            width: 100%;
+            margin: 0 auto;
+            padding: 10px 2%;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            #navbar li {
+                margin: 0;
+                padding: 0;
+            }
+
+            #navbar li a {
+                margin: 0;
+                padding: 0;
+                font-family: 'Quicksand', sans-serif;
+                text-decoration: none;
+                color: white;
+                font-size: 1.25rem;
+            }
+
+            #navbar li p {
+                margin: 0;
+                padding: 0;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 700;
+                text-decoration: none;
+                color: white;
+                font-size: 2.5rem;
+            }
+
+    #dashboard-welcome {
+        width: 90%;
+        margin: 25px 5% 0px 5%;
+        padding: 0;
+        font-family: 'Quicksand', sans-serif;
+        opacity: .87;
+    }
+
+    #dashboard-current-username {
+        width: 90%;
+        margin: 5px 5% 25px 5%;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: .75rem;
+        font-weight: normal;
+        opacity: .54;
+    }
+
+    .search-container {
+        width: 90%;
+        margin: 0 5%;
+        padding: 0;
+
+    }
+
+        #search-bar {
+            width: 100%;
+            margin: 0;
+            padding: 10px 0;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.5rem;
+
+
+        }
+
+        #new-question-link {
+            width: 100%;
+            margin-top: 10px ;
+            padding: 0;
+            text-align: right;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1rem;
+        }
+
+    table {
+        width: 90%;
+        margin: 15px 5% 0 5%;
+        padding: 0;
+        text-align: left;
+    }
+
+        th, td {
+            margin: 0;
+            padding: 10px;
+        }
+
+        th {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            opacity: .87;
+        }
+
+        td {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            font-weight: normal;
+            opacity: .87;
+        }
+
+        th:nth-child(1){
+            width: 700px;
+        }
+        td:nth-child(1){
+            width: 700px;
+        }
+
+        th:nth-child(2){
+            text-align: right;
+            width: 100px;
+        }
+        td:nth-child(2){
+            text-align: right;
+            width: 100px;
+        }
+
+        th:nth-child(3){
+            text-align: right;
+            width: 200px;
+        }
+        td:nth-child(3){
+            text-align: right;
+            width: 200px;
+        }
+
+
+}
+
+
+@media only screen and (max-width: 767px) { /* Flex styles, for mobile, smaller screens */
+
+    .navbar-container {
+        background-color: #1abc9c;
+    }
+
+        #navbar {
+            width: 100%;
+            margin: 0 auto;
+            padding: 10px 2%;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            #navbar li {
+                margin: 0;
+                padding: 0;
+            }
+
+            #navbar li a {
+                margin: 0;
+                padding: 0;
+                font-family: 'Quicksand', sans-serif;
+                text-decoration: none;
+                color: white;
+                font-size: 1.25rem;
+            }
+
+            #navbar li p {
+                margin: 0;
+                padding: 0;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 700;
+                text-decoration: none;
+                color: white;
+                font-size: 2.5rem;
+            }
+
+    #dashboard-welcome {
+        width: 90%;
+        margin: 25px 5% 0 5%;
+        padding: 0;
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        opacity: .87;
+    }
+
+    #dashboard-current-username {
+        width: 90%;
+        margin: 5px 5% 25px 5%;
+        padding: 0;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: .75rem;
+        font-weight: normal;
+        opacity: .54;
+    }
+
+    .search-container {
+        width: 90%;
+        margin: 0 5%;
+        padding: 0;
+
+    }
+
+        #search-bar {
+            width: 100%;
+            margin: 0;
+            padding: 10px 0;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.5rem;
+
+
+        }
+
+        #new-question-link {
+            width: 100%;
+            margin-top: 10px ;
+            padding: 0;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1rem;
+        }
+
+    table {
+        width: 100%;
+        margin: 15px auto 0 auto;
+        padding: 0;
+        text-align: left;
+    }
+
+        th, td {
+            margin: 0;
+            padding: 10px;
+        }
+
+        th {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            opacity: .87;
+        }
+
+        td {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            font-weight: normal;
+            opacity: .87;
+        }
+
+        th:nth-child(1){
+            width: 500px;
+        }
+        td:nth-child(1){
+            width: 500px;
+        }
+
+        th:nth-child(2){
+            text-align: right;
+            width: 100px;
+        }
+        td:nth-child(2){
+            text-align: right;
+            width: 100px;
+        }
+
+        th:nth-child(3){
+            text-align: right;
+            width: 200px;
+        }
+        td:nth-child(3){
+            text-align: right;
+            width: 200px;
+        }
+
+
+}
