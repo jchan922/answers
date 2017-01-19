@@ -45,6 +45,8 @@
         margin: 25px 5% 0px 5%;
         padding: 0;
         font-family: 'Quicksand', sans-serif;
+        font-size: 3rem;
+        font-weight: 700;
         opacity: .87;
     }
 
@@ -62,7 +64,6 @@
         width: 90%;
         margin: 0 5%;
         padding: 0;
-
     }
 
         #search-bar {
@@ -74,19 +75,23 @@
             font-size: 1.5rem;
         }
 
-        #new-question-link, #new-question-link a {
+        #new-question-link {
             width: 100%;
-            margin-top: 10px ;
-            padding: 0;
-            text-align: right;
-            font-family: 'Quicksand', sans-serif;
-            font-size: 1rem;
-            color: #EF5350;
+            margin: 10px 0 0 0;
+            padding: 3px 5px;
+            background-color: #EF5350;
         }
+
+            #new-question-link a {
+                text-decoration: none;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 1rem;
+                color: white;
+            }
 
     table {
         width: 90%;
-        margin: 15px 5% 0 5%;
+        margin: 15px 5% 50px 5%;
         padding: 0;
         text-align: left;
     }
@@ -103,9 +108,9 @@
             opacity: .87;
         }
 
-        td {
+        td, td a {
             font-family: 'Roboto', sans-serif;
-            font-size: 1rem;
+            font-size: 1.15rem;
             font-weight: normal;
             opacity: .87;
         }
@@ -185,6 +190,7 @@
         padding: 0;
         text-align: center;
         font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
         opacity: .87;
     }
 
@@ -217,19 +223,24 @@
 
         }
 
-        #new-question-link, #new-question-link a  {
+        #new-question-link {
             width: 90%;
             margin-top: 10px ;
-            padding: 0;
-            text-align: center;
-            font-family: 'Quicksand', sans-serif;
-            font-size: 1rem;
-            color: #EF5350;
+            padding: 3px 5px;
+            background-color: #EF5350;
         }
+
+            #new-question-link a {
+                text-decoration: none;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 1rem;
+                color: white;
+            }
+
 
     table {
         width: 100%;
-        margin: 15px auto 0 auto;
+        margin: 15px auto 50px auto;
         padding: 0;
         text-align: left;
     }
@@ -246,9 +257,9 @@
             opacity: .87;
         }
 
-        td {
+        td, td a {
             font-family: 'Roboto', sans-serif;
-            font-size: 1rem;
+            font-size: 1.15rem;
             font-weight: normal;
             opacity: .87;
         }
@@ -282,7 +293,7 @@
 }
 
 
-@media only screen and (max-width: 399px) {
+@media only screen and (max-width: 400px) {
     .navbar-container {
         background-color: #1abc9c;
     }
@@ -327,6 +338,7 @@
         padding: 0;
         text-align: center;
         font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
         opacity: .87;
     }
 
@@ -355,23 +367,26 @@
             text-align: center;
             font-family: 'Quicksand', sans-serif;
             font-size: 1.5rem;
-
-
         }
 
-        #new-question-link, #new-question-link a  {
+        #new-question-link {
             width: 90%;
             margin-top: 10px ;
-            padding: 0;
-            text-align: center;
-            font-family: 'Quicksand', sans-serif;
-            font-size: 1rem;
-            color: #EF5350;
+            padding: 3px 5px;
+            background-color: #EF5350;
         }
+
+            #new-question-link a {
+                text-decoration: none;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 1rem;
+                color: white;
+            }
+
 
     table {
         width: 100%;
-        margin: 15px auto 0 auto;
+        margin: 15px auto 50px auto;
         padding: 0;
         text-align: left;
     }
@@ -388,9 +403,9 @@
             opacity: .87;
         }
 
-        td {
+        td, td a {
             font-family: 'Roboto', sans-serif;
-            font-size: 1rem;
+            font-size: 1.15rem;
             font-weight: normal;
             opacity: .87;
         }

@@ -1,5 +1,5 @@
 
-<title>Home</title>
+<title>QA | Dashboard</title>
 <div ng-controller="dashboardController">
     <div class="navbar-container">
         <ul id="navbar">
@@ -9,14 +9,13 @@
         </ul>
     </div>
 
-
     <h1 id="dashboard-welcome">Hi, {{current_user.name}}!</h1>
     <p id="dashboard-current-username">Currently logged in as: {{current_user.name}}</p>
 
     <div class="search-container">
         <!-- <label for="search_bar">Search by Question:</label> -->
         <input id="search-bar" type="text" ng-model="filter_question" placeholder="Search by Question">
-        <p id="new-question-link"><a href="#/question">Add A New Question</a></p>
+        <button id="new-question-link" class="btn"><a href="#/question">Add A New Question</a></button>
     </div>
 
     <table>
@@ -28,7 +27,7 @@
         <tr ng-repeat="question in allQuestions | filter:filter_question">
             <td><a href="#/show/{{question._id}}">{{question.question}}</a></td>
             <td>{{question.answers.length}}</td>
-            <td><a href="#/show/{{question._id}}">Show</a> | <a href="#/answer/{{question._id}}">Answer</a></td>
+            <td><a href="#/answer/{{question._id}}">Answer</a></td>
         </tr>
     </table>
 

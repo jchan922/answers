@@ -224,10 +224,11 @@
         #register-modal-large {
             width: 20%;
             margin: 25px 40% 50px 40%;
+            background-color: #EF5350;
+
         }
 
         .product-description-list {
-            /*border: 2px solid red;*/
             width: 90%;
             margin: 0 auto;
             display: flex;
@@ -236,7 +237,6 @@
         }
 
             .product-function {
-                /*border: 2px solid red;*/
                 border: 1px solid grey;
                 background-color: white;
                 margin: 0px 5px;
@@ -286,14 +286,12 @@
 
 
     .footer {
-        border: 1px solid red;
         background-color: white;
         padding: 0;
         margin: 0;
     }
 
         #copyright {
-            border: 1px solid red;
             padding: 0;
             margin: 0;
             text-align: center;

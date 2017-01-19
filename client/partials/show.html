@@ -1,49 +1,33 @@
-<style>
-    ul {
-        padding: 0px;
-    }
-
-    #ul_top {
-        list-style: none;
-    }
-        #ul_top li{
-            display: inline-block;
-            margin-right: 20px;
-        }
-
-    #ul_done{
-        list-style: none;
-    }
-
-    #ul_pending{
-        list-style: none;
-    }
-
-    div {
-        margin-bottom: 25px;
-    }
-        p {
-            margin: 0px;
-        }
-
-</style>
-<title>Q + A</title>
+<title>QA | Question</title>
 <div ng-controller="showController">
 
-    <ul id="ul_top">
-        <li><a href="#/dashboard">Home</a> | <a href="#/answer/{{question._id}}">Answer This Question</a></li>
-        <li><a href="#" ng-click="logout()">Log-Out</a></li>
-    </ul>
+    <div class="navbar-container">
+        <ul id="navbar">
+            <li><a href="#/dashboard">Home</a></li>
+            <li><p>QA</p></li>
+            <li><a href="#" ng-click="logout()">Log-Out</a></li>
+        </ul>
+    </div>
 
-    <h1>{{question.question}}</h1>
-    <h2>{{question.description}}</h2>
+    <div class="question-container">
+        <h1>{{question.question}}</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{{question.description}}</h2>
+        <button id="answer-question-link" class="btn" type="button" name="button"><a href="#/answer/{{question._id}}">Answer</a></button>
+    </div>
 
-    <div ng-repeat="answer in answers | orderBy:'-likes' ">
-        <p><b>{{answer._creator.name}}:</b></p>
-        <p>Answer: {{answer.answer}}</p>
-        <p>{{answer.details}} </p>
-        <p>Likes: {{answer.likes}}</p>
-        <button type="button" ng-click="increaseLikes(answer._id)">Like!</button>
+    <div class="answers-container" ng-repeat="answer in answers | orderBy:'-likes' ">
+        <div class="answer-container-box">
+            <div class="answers-container-box-topbar">
+                <div class="answers-container-box-topbar-left">
+                    <h3 id="answer-creator-name">{{answer._creator.name}}:</h3>
+                </div>
+                <div class="answers-container-box-topbar-right">
+                    <h3>x{{answer.likes}}</h3>
+                    <button id="like-button" class="btn" type="button" ng-click="increaseLikes(answer._id)">+1</button>
+                </div>
+            </div>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{{answer.answer}}</h4>
+        </div>
     </div>
 
     <!-- <p style="color:red;">{{test}}</p> -->
