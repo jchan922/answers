@@ -1,145 +1,102 @@
-@media only screen and (min-width: 768px) { /* For Desktop, large screens */
+.question-container {
+    width: 90%;
+    margin: 15px 5%;
+    padding: 15px 0;
+}
 
-    .navbar-container {
-        background-color: #1abc9c;
+    .question-container h1 {
+        width: 100%;
+        margin: 0 0 15px 0;
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        color: black;
+        font-size: 3rem;
+        opacity: .75;
     }
 
-        #navbar {
-            width: 100%;
-            margin: 0 auto;
-            padding: 10px 2%;
-            list-style: none;
+    .question-container h2 {
+        width: 90%;
+        margin: 0 5%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: black;
+        font-size: 1.5rem;
+        opacity: .54;
+    }
+
+    #answer-question-link {
+        width: 90%;
+        margin: 15px 5% 0 5%;
+        padding: 3px 5px;
+        background-color: #00796B;
+    }
+
+        #answer-question-link a {
+            text-decoration: none;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1rem;
+            color: white;
+        }
+
+.answers-container {
+    width: 80%;
+    margin: 5px 10% 50px 10%;
+}
+
+    .answer-container-box {
+        margin-bottom: 5px;
+    }
+
+        .answers-container-box-topbar {
+            margin: 0;
+            padding: 0;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: space-between;
         }
 
-            #navbar li {
-                margin: 0;
-                padding: 0;
-            }
-
-            #navbar li a {
-                margin: 0;
-                padding: 0;
+            #answer-creator-name {
                 font-family: 'Quicksand', sans-serif;
-                text-decoration: none;
-                color: white;
-                font-size: 1.25rem;
+                font-weight: 700;
+                color: black;
+                font-size: 1.5rem;
+                opacity: .75;
             }
 
-            #navbar li p {
+        .answers-container-box-topbar-right {
+            padding: 0;
+            text-align: right;
+            display: flex;
+            flex-direction: row;
+        }
+
+            .answers-container-box-topbar-right h3{
                 margin: 0;
                 padding: 0;
                 font-family: 'Quicksand', sans-serif;
                 font-weight: 700;
-                text-decoration: none;
-                color: white;
-                font-size: 2.5rem;
+                color: black;
+                font-size: 1.25rem;
+                opacity: .75;
             }
 
-
-    .question-container {
-        width: 90%;
-        margin: 15px 5%;
-        padding: 15px 0;
-    }
-
-        .question-container h1 {
-            width: 100%;
-            margin: 0 0 15px 0;
-            text-align: center;
-            font-family: 'Quicksand', sans-serif;
-            font-weight: 700;
-            color: black;
-            font-size: 3rem;
-            opacity: .75;
-        }
-
-        .question-container h2 {
-            width: 90%;
-            margin: 0 5%;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-            color: black;
-            font-size: 1.5rem;
-            opacity: .54;
-        }
-
-        #answer-question-link {
-            width: 90%;
-            margin: 15px 5% 0 5%;
-            padding: 3px 5px;
-            background-color: #00796B;
-        }
-
-            #answer-question-link a {
-                text-decoration: none;
+            #like-button {
+                cursor: pointer;
+                margin-left: 5px;
+                padding: 0 10px;
+                background-color: #EF5350;
                 font-family: 'Quicksand', sans-serif;
+                font-weight: 400;
+                color: black;
                 font-size: 1rem;
-                color: white;
+                opacity: .75;
             }
 
-    .answers-container {
-        width: 80%;
-        margin: 5px 10% 50px 10%;
+    .answer-container-box h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: black;
+        font-size: 1.25rem;
+        opacity: .54;
     }
-
-        .answer-container-box {
-            margin-bottom: 5px;
-        }
-
-            .answers-container-box-topbar {
-                margin: 0;
-                padding: 0;
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-
-                #answer-creator-name {
-                    font-family: 'Quicksand', sans-serif;
-                    font-weight: 700;
-                    color: black;
-                    font-size: 1.5rem;
-                    opacity: .75;
-                }
-
-            .answers-container-box-topbar-right {
-                padding: 0;
-                text-align: right;
-                display: flex;
-                flex-direction: row;
-            }
-
-                .answers-container-box-topbar-right h3{
-                    margin: 0;
-                    padding: 0;
-                    font-family: 'Quicksand', sans-serif;
-                    font-weight: 700;
-                    color: black;
-                    font-size: 1.25rem;
-                    opacity: .75;
-                }
-
-                #like-button {
-                    cursor: pointer;
-                    margin-left: 5px;
-                    padding: 0 10px;
-                    background-color: #EF5350;
-                    font-family: 'Quicksand', sans-serif;
-                    font-weight: 400;
-                    color: black;
-                    font-size: 1rem;
-                    opacity: .75;
-                }
-
-        .answer-container-box h4 {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-            color: black;
-            font-size: 1.25rem;
-            opacity: .54;
-        }
-
-}

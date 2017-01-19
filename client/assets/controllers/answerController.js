@@ -20,11 +20,10 @@ app.controller('answerController', ['$scope', '$location', '$routeParams', 'user
                 $scope.newAnswerErrors = returnDataFromFactory.errors;
             } else {
                 $scope.newAnswer = {};
-                $location.url('/dashboard')
+                $location.url('/show/'+$routeParams.id)
             }
         })
     };
-
 
 // LOG OUT A USER ==========================================================================
     $scope.logout = function() {

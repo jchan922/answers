@@ -187,7 +187,6 @@
 
     .product-description {
         width: 100%;
-        height: 35rem;
         margin: 0 auto;
         padding: 50px 0;
         background: rgba(255,255,255,1);
@@ -214,7 +213,7 @@
             width: 75%;
             margin: 25px auto 25px auto;
             font-family: 'Roboto', sans-serif;
-            text-align: left;
+            text-align: center;
             font-size: 1.5rem;
             font-weight: normal;
             color: black;
@@ -222,8 +221,8 @@
         }
 
         #register-modal-large {
-            width: 20%;
-            margin: 25px 40% 50px 40%;
+            width: 30%;
+            margin: 25px 35% 50px 35%;
             background-color: #EF5350;
 
         }
@@ -267,9 +266,9 @@
 
 
     .latest-question-container {
-        background-color: #00796B;
+        background-color: #00897B;
         font-family: 'Quicksand', sans-serif;
-        padding: 75px 0;
+        padding: 50px 0;
     }
 
         .latest-question-container h2 {
@@ -279,7 +278,7 @@
             opacity: 1;
         }
 
-        #latest-question {
+        .latest-question {
             font-style: italic;
             opacity: .75;
         }
@@ -295,7 +294,7 @@
             padding: 0;
             margin: 0;
             text-align: center;
-            font-size: .75rem;
+            font-size: .5rem;
             opacity: .36;
         }
 
@@ -304,13 +303,12 @@
 @media only screen and (max-width: 767px) {
     .header {
         background-color: #1abc9c;
-        height: 27.5rem;
     }
 
     .main-container {
         width: 80%;
         margin: auto;
-        padding: 50px 0;
+        padding: 15px 0 35px 0;
     }
         .main-headline-textbox {
             margin: 0 auto;
@@ -323,7 +321,7 @@
                 color: white;
                 font-family: 'Quicksand', sans-serif;
                 font-weight: 700;
-                font-size: 4rem;
+                font-size: 4.5rem;
             }
 
             .header h2 {
@@ -333,7 +331,7 @@
                 color: white;
                 font-family: 'Quicksand', sans-serif;
                 font-weight: 400;
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
 
                 #answers-underline {
@@ -342,7 +340,7 @@
 
         .main-login-container {
             width: 200px;
-            margin: 45px auto 0 auto;
+            margin: 30px auto 0 auto;
             padding: 10px 0px;
             background: rgba(255,255,255,1);
             background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
@@ -369,7 +367,7 @@
 
 
             .login-form {
-                width: 60%;
+                width: 80%;
                 margin: 0 auto;
                 padding: 5px 5px;
                 display: flex;
@@ -396,9 +394,21 @@
                     display: block;
                 }
 
+
+                .main-login-container p {
+                    text-align: center;
+                    width: 100%;
+                    margin: 0px;
+                    padding: 0px;
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: 600;
+                    font-size: .75rem;
+                    color: red;
+                }
+
                 .login-form .login-button {
                     height: 25px;
-                    margin: 0;
+                    margin: 5px 0 0 0;
                     padding: 0 10px;
                     background-color: #0275D8;
                     font-family: 'Quicksand', sans-serif;
@@ -407,25 +417,180 @@
                     display: block;
                 }
 
-                .main-login-container p {
-                    text-align: center;
-                    margin: 0px;
-                    padding: 0px;
+                .login-form .register-button {
+                    height: 25px;
+                    margin: 5px 0 0 0;
+                    padding: 0 5px;
+                    background-color: #EF5350;
                     font-family: 'Quicksand', sans-serif;
-                    font-weight: 600;
-                    font-size: 1rem;
-                    color: red;
+                    font-size: .85rem;
+                    color: white;
                 }
 
+                /*REGISTER MODAL*/
+
+                #register-modal {
+                    font-family: 'Quicksand', sans-serif;
+                }
+
+                    #register-modal #error-message {
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+
+                    #register-modal-title {
+                        width: 100%;
+                        margin: 0 auto;
+                        padding: 0px;
+                        text-align: center;
+                        font-size: 1.5rem;
+                        color: black;
+                        opacity: .75;
+                    }
+
+                    #reg-form-list {
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    #reg-form-list li{
+                        list-style: none;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+                    }
+
+                    #reg-form-list > li > label {
+                        flex: 1 0 120px;
+                        max-width: 220px;
+                        font-size: 1rem;
+                    }
+
+
+                    #reg-submit-button {
+                        margin-top: 15px;
+                        margin-left: auto;
+                        height: 25px;
+                        width: 120px;
+                        max-width: 220px;
+                        border: none;
+                        border-radius: 5px;
+                        background: #00BFA5;
+                        color: white;
+                    }
+
     .product-description {
-        margin: 50px auto;
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0;
+        background: rgba(255,255,255,1);
+        background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(247,247,247,1)), color-stop(100%, rgba(240,240,240,1)));
+        background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
+        background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
+        background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
+        background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0', GradientType=1 );
     }
+
         .product-description h2 {
+            font-family: 'Quicksand', sans-serif;
+            width: 80%;
+            margin: 0 auto 25px auto;
             text-align: center;
-            font-size: 1.5rem;
-            color: #00695C;
+            font-size: 2rem;
+            color: #009688;
             opacity: .87;
         }
 
+        .product-description h3 {
+            width: 75%;
+            margin: 25px auto 25px auto;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: normal;
+            color: black;
+            opacity: .65;
+        }
+
+        #register-modal-large {
+            width: 40%;
+            margin: 25px 30% 50px 30%;
+            background-color: #EF5350;
+
+        }
+
+        .product-description-list {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+            .product-function {
+                border: 1px solid grey;
+                background-color: white;
+                margin: 0px 5px;
+                padding: 10px;
+                flex: 1;
+                -webkit-box-shadow: 3px 4px 15px -2px rgba(0,0,0,0.53);
+                -moz-box-shadow: 3px 4px 15px -2px rgba(0,0,0,0.53);
+                box-shadow: 3px 4px 15px -2px rgba(0,0,0,0.53);
+            }
+
+            .product-function h4{
+                border-bottom: 1px solid grey;
+                font-family: 'Quicksand', sans-serif;
+                padding: 5px 0px;
+                text-align: center;
+                color: #00796B;
+                font-size: 1.25rem;
+                opacity: .87;
+            }
+
+            .product-function p{
+                text-align: left;
+                font-family: 'Roboto', sans-serif;
+                color: black;
+                font-size: .85rem;
+                opacity: .54;
+            }
+
+    .latest-question-container {
+        background-color: #00897B;
+        font-family: 'Quicksand', sans-serif;
+        padding: 25px 0;
+    }
+
+        .latest-question-container h2 {
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            opacity: 1;
+        }
+
+        .latest-question {
+            font-style: italic;
+            opacity: .75;
+        }
+
+    .footer {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+    }
+
+        #copyright {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            font-size: .5rem;
+            opacity: .36;
+        }
 
 }

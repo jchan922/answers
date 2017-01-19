@@ -1,45 +1,5 @@
 
 @media only screen and (min-width: 768px) { /* For Desktop, large screens */
-
-
-    .navbar-container {
-        background-color: #1abc9c;
-    }
-
-        #navbar {
-            width: 100%;
-            margin: 0 auto;
-            padding: 10px 2%;
-            list-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-            #navbar li {
-                margin: 0;
-                padding: 0;
-            }
-
-            #navbar li a {
-                margin: 0;
-                padding: 0;
-                font-family: 'Quicksand', sans-serif;
-                text-decoration: none;
-                color: white;
-                font-size: 1.25rem;
-            }
-
-            #navbar li p {
-                margin: 0;
-                padding: 0;
-                font-family: 'Quicksand', sans-serif;
-                font-weight: 700;
-                text-decoration: none;
-                color: white;
-                font-size: 2.5rem;
-            }
-
     #dashboard-welcome {
         width: 90%;
         margin: 25px 5% 0px 5%;
@@ -145,45 +105,6 @@
 
 
 @media only screen and (min-width: 400px) and (max-width: 767px) { /* Flex styles, for mobile, smaller screens */
-
-    .navbar-container {
-        background-color: #1abc9c;
-    }
-
-        #navbar {
-            width: 100%;
-            margin: 0 auto;
-            padding: 10px 2%;
-            list-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-            #navbar li {
-                margin: 0;
-                padding: 0;
-            }
-
-            #navbar li a {
-                margin: 0;
-                padding: 0;
-                font-family: 'Quicksand', sans-serif;
-                text-decoration: none;
-                color: white;
-                font-size: 1.25rem;
-            }
-
-            #navbar li p {
-                margin: 0;
-                padding: 0;
-                font-family: 'Quicksand', sans-serif;
-                font-weight: 700;
-                text-decoration: none;
-                color: white;
-                font-size: 2.5rem;
-            }
-
     #dashboard-welcome {
         width: 90%;
         margin: 25px 5% 0 5%;
@@ -239,8 +160,8 @@
 
 
     table {
-        width: 100%;
-        margin: 15px auto 50px auto;
+        width: 90%;
+        margin: 15px 5% 50px 5%;
         padding: 0;
         text-align: left;
     }
@@ -293,45 +214,7 @@
 }
 
 
-@media only screen and (max-width: 400px) {
-    .navbar-container {
-        background-color: #1abc9c;
-    }
-
-        #navbar {
-            width: 100%;
-            margin: 0 auto;
-            padding: 10px 2%;
-            list-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-            #navbar li {
-                margin: 0;
-                padding: 0;
-            }
-
-            #navbar li a {
-                margin: 0;
-                padding: 0;
-                font-family: 'Quicksand', sans-serif;
-                text-decoration: none;
-                color: white;
-                font-size: 1.25rem;
-            }
-
-            #navbar li p {
-                margin: 0;
-                padding: 0;
-                font-family: 'Quicksand', sans-serif;
-                font-weight: 700;
-                text-decoration: none;
-                color: white;
-                font-size: 2.5rem;
-            }
-
+@media only screen and (max-width: 450px) {
     #dashboard-welcome {
         width: 90%;
         margin: 25px 5% 0 5%;
@@ -385,8 +268,8 @@
 
 
     table {
-        width: 100%;
-        margin: 15px auto 50px auto;
+        width: 90%;
+        margin: 15px 5% 50px 5%;
         padding: 0;
         text-align: left;
     }

@@ -1,110 +1,67 @@
-@media only screen and (min-width: 768px) { /* For Desktop, large screens */
-
-    .navbar-container {
-        background-color: #1abc9c;
-    }
-
-        #navbar {
-            width: 100%;
-            margin: 0 auto;
-            padding: 10px 2%;
-            list-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-            #navbar li {
-                margin: 0;
-                padding: 0;
-            }
-
-            #navbar li a {
-                margin: 0;
-                padding: 0;
-                font-family: 'Quicksand', sans-serif;
-                text-decoration: none;
-                color: white;
-                font-size: 1.25rem;
-            }
-
-            #navbar li p {
-                margin: 0;
-                padding: 0;
-                font-family: 'Quicksand', sans-serif;
-                font-weight: 700;
-                text-decoration: none;
-                color: white;
-                font-size: 2.5rem;
-            }
-
-
-    .new-question-headline {
-        width: 90%;
-        margin: 25px 5% 25px 5%;
-        padding: 15px 0;
-    }
-
-        .new-question-headline h1 {
-            text-align: center;
-            font-family: 'Quicksand', sans-serif;
-            font-weight: 700;
-            color: black;
-            font-size: 3.5rem;
-            opacity: .75;
-        }
-
-    .new-question-container {
-        width: 90%;
-        margin: 25px 5% 50px 5%;
-        padding: 15px 0;
-    }
-
-        .new-question-container p {
-            text-align: center;
-        }
-
-        #question-input {
-            border: 1px solid grey;
-            width: 90%;
-            margin: 0px 5%;
-            font-family: 'Quicksand', sans-serif;
-            font-weight: 400;
-            color: black;
-            font-size: 1.5rem;
-            opacity: .75;
-        }
-
-        #question-description {
-            border: 1px solid grey;
-            width: 90%;
-            height: 200px;
-            margin: 10px 5% 5px 5%;
-            resize: none;
-            font-family: 'Quicksand', sans-serif;
-            font-weight: 400;
-            color: black;
-            font-size: 1.5rem;
-            opacity: .75;
-        }
-
-        .new-question-form-buttons {
-            margin: 0px 5%;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-            .new-question-form-buttons button,  .new-question-form-buttons button a{
-                margin: 0 5px;
-                background-color: #E57373;
-                text-decoration: none;
-                color: white;
-            }
-
-            .new-question-form-buttons input {
-                cursor: pointer;
-                background-color: #4DB6AC;
-                color: white;
-            }
-
+.new-question-headline {
+    width: 90%;
+    margin: 15px 5% 5px 5%;
+    padding: 10px 0;
 }
+
+    .new-question-headline h1 {
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        color: black;
+        font-size: 3.5rem;
+        opacity: .75;
+    }
+
+.new-question-container {
+    width: 90%;
+    margin: 0 5% 25px 5%;
+    padding: 15px 0;
+}
+
+    .new-question-container p {
+        text-align: center;
+    }
+
+    #question-input {
+        border: 1px solid grey;
+        width: 90%;
+        margin: 0px 5%;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        color: black;
+        font-size: 1.5rem;
+        opacity: .75;
+    }
+
+    #question-description {
+        border: 1px solid grey;
+        width: 90%;
+        height: 200px;
+        margin: 10px 5% 5px 5%;
+        resize: none;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        color: black;
+        font-size: 1.5rem;
+        opacity: .75;
+    }
+
+    .new-question-form-buttons {
+        margin: 0px 5%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+        .new-question-form-buttons button,  .new-question-form-buttons button a{
+            margin: 0 5px;
+            background-color: #E57373;
+            text-decoration: none;
+            color: white;
+        }
+
+        .new-question-form-buttons input {
+            cursor: pointer;
+            background-color: #4DB6AC;
+            color: white;
+        }
