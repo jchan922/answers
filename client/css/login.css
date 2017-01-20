@@ -108,6 +108,9 @@
                     font-family: 'Quicksand', sans-serif;
                     font-size: .85rem;
                     color: white;
+                    -webkit-box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.33);
+                    -moz-box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.33);
+                    box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.33);
                 }
 
                 .login-form .register-button {
@@ -118,6 +121,9 @@
                     font-family: 'Quicksand', sans-serif;
                     font-size: .85rem;
                     color: white;
+                    -webkit-box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.33);
+                    -moz-box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.33);
+                    box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.33);
                 }
 
             .main-login-container p {
@@ -182,6 +188,9 @@
                         border-radius: 5px;
                         background: #00BFA5;
                         color: white;
+                        -webkit-box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.33);
+                        -moz-box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.33);
+                        box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.33);
                     }
 
 
@@ -224,7 +233,9 @@
             width: 30%;
             margin: 25px 35% 50px 35%;
             background-color: #EF5350;
-
+            -webkit-box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.33);
+            -moz-box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.33);
+            box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.33);
         }
 
         .product-description-list {

@@ -16,7 +16,7 @@
         <!-- <label for="search_bar">Search by Question:</label> -->
         <input id="search-bar" type="text" ng-model="filter_question" placeholder="Search by Question">
         <div id="questionHolder">
-            <button id="new-question-link" class="btn"><a href="#/question">Add A New Question</a></button>
+            <button id="new-question-link" class="btn"><a href="#/question">Ask A New Question</a></button>
         </div>
     </div>
 
@@ -29,7 +29,7 @@
         <tr ng-repeat="question in allQuestions | filter:filter_question">
             <td><a href="#/show/{{question._id}}">{{question.question}}</a></td>
             <td>{{question.answers.length}}</td>
-            <td><button class="btn answer-question-link"><a href="#/answer/{{question._id}}">Answer</a></button></td>
+            <td><button class="btn answer-question-link"><a id="table-answer-link" href="#/answer/{{question._id}}">Answer</a></button></td>
         </tr>
     </table>
 </div>
