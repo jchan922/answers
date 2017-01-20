@@ -10,12 +10,14 @@
     </div>
 
     <h1 id="dashboard-welcome">Hi, {{current_user.name}}!</h1>
-    <p id="dashboard-current-username">Currently logged in as: {{current_user.name}}</p>
+    <p id="dashboard-current-username">Currently logged in as: {{current_user.email}}</p>
 
     <div class="search-container">
         <!-- <label for="search_bar">Search by Question:</label> -->
         <input id="search-bar" type="text" ng-model="filter_question" placeholder="Search by Question">
-        <button id="new-question-link" class="btn"><a href="#/question">Add A New Question</a></button>
+        <div id="questionHolder">
+            <button id="new-question-link" class="btn"><a href="#/question">Add A New Question</a></button>
+        </div>
     </div>
 
     <table>
@@ -27,8 +29,7 @@
         <tr ng-repeat="question in allQuestions | filter:filter_question">
             <td><a href="#/show/{{question._id}}">{{question.question}}</a></td>
             <td>{{question.answers.length}}</td>
-            <td><a href="#/answer/{{question._id}}">Answer</a></td>
+            <td><button class="btn answer-question-link"><a href="#/answer/{{question._id}}">Answer</a></button></td>
         </tr>
     </table>
-
 </div>

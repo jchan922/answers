@@ -14,12 +14,15 @@ body {
 
 .navbar-container {
     background-color: #1abc9c;
+    -webkit-box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.33);
+    box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.33);
 }
 
     #navbar {
         width: 100%;
         margin: 0 auto;
-        padding: 10px 2%;
+        padding: 10px 5%;
         list-style: none;
         display: flex;
         align-items: center;

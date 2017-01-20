@@ -24,7 +24,7 @@ app.controller('showController', ['$scope', '$location', '$routeParams', 'usersF
             if(returnDataFromFactory.hasOwnProperty('errors')){
                 console.log($scope.newQuestionErrors);
             } else {
-                getCurrentQuestion();    
+                getCurrentQuestion();
             }
         })
     };

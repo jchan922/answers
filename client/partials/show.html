@@ -1,6 +1,5 @@
 <title>QA | Question</title>
 <div ng-controller="showController">
-
     <div class="navbar-container">
         <ul id="navbar">
             <li><a href="#/dashboard">Home</a></li>
@@ -12,12 +11,17 @@
     <div class="question-container">
         <h1>{{question.question}}</h1>
         <h2>{{question.description}}</h2>
-        <button id="answer-question-link" class="btn" type="button" name="button"><a href="#/answer/{{question._id}}">Answer</a></button>
+        <div id="answerButtonHolder">
+            <button class="answer-question-link btn" type="button" name="button"><a href="#/answer/{{question._id}}">Answer This Question</a></button>
+        </div>
     </div>
 
+    <h3 id="answers-container-headline">Answers</h3>
+
     <div class="answers-container" ng-repeat="answer in answers | orderBy:'-likes' ">
+
         <div class="answer-container-box">
-            <div class="answers-container-box-topbar">
+            <div ng-class="{answer_selected:upvoted}" class="answers-container-box-topbar">
                 <div class="answers-container-box-topbar-left">
                     <h3 id="answer-creator-name">{{answer._creator.name}}:</h3>
                 </div>
@@ -27,7 +31,7 @@
                 </div>
             </div>
             <h4>{{answer.answer}}</h4>
+            <p>{{answer.createdAt | date: 'medium'}}</p>
         </div>
     </div>
-
 </div>

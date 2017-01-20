@@ -1,5 +1,18 @@
+.page-gradient {
+    padding: 0 0 25px 0;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(247,247,247,1)), color-stop(100%, rgba(240,240,240,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 47%, rgba(240,240,240,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0', GradientType=1 );
+}
 
 @media only screen and (min-width: 768px) { /* For Desktop, large screens */
+
+
     #dashboard-welcome {
         width: 90%;
         margin: 25px 5% 0px 5%;
@@ -35,11 +48,16 @@
             font-size: 1.5rem;
         }
 
+    #questionHolder {
+        text-align: center;
+    }
+
         #new-question-link {
-            width: 100%;
             margin: 10px 0 0 0;
-            padding: 3px 5px;
             background-color: #EF5350;
+            -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         }
 
             #new-question-link a {
@@ -72,6 +90,7 @@
             font-family: 'Roboto', sans-serif;
             font-size: 1.15rem;
             font-weight: normal;
+            color: #009688;
             opacity: .87;
         }
 
@@ -144,11 +163,17 @@
 
         }
 
+    #questionHolder {
+        width: 90%;
+        text-align: center;
+    }
+
         #new-question-link {
-            width: 90%;
-            margin-top: 10px ;
-            padding: 3px 5px;
+            margin: 10px 0 0 0;
             background-color: #EF5350;
+            -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         }
 
             #new-question-link a {
@@ -182,6 +207,7 @@
             font-family: 'Roboto', sans-serif;
             font-size: 1.15rem;
             font-weight: normal;
+            color: #009688;
             opacity: .87;
         }
 
@@ -252,11 +278,16 @@
             font-size: 1.5rem;
         }
 
+    #questionHolder {
+        text-align: center;
+    }
+
         #new-question-link {
-            width: 90%;
-            margin-top: 10px ;
-            padding: 3px 5px;
+            margin: 10px 0 0 0;
             background-color: #EF5350;
+            -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         }
 
             #new-question-link a {
@@ -290,6 +321,7 @@
             font-family: 'Roboto', sans-serif;
             font-size: 1.15rem;
             font-weight: normal;
+            color: #009688;
             opacity: .87;
         }
 

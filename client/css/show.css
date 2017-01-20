@@ -6,18 +6,19 @@
 
     .question-container h1 {
         width: 100%;
-        margin: 0 0 15px 0;
+        margin: 0 0 20px 0;
         text-align: center;
         font-family: 'Quicksand', sans-serif;
         font-weight: 700;
         color: black;
-        font-size: 3rem;
+        font-size: 2.5rem;
         opacity: .75;
     }
 
     .question-container h2 {
-        width: 90%;
-        margin: 0 5%;
+        width: 80%;
+        margin: 0 10% 20px 10%;
+        text-align: center;
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         color: black;
@@ -25,24 +26,41 @@
         opacity: .54;
     }
 
-    #answer-question-link {
-        width: 90%;
-        margin: 15px 5% 0 5%;
-        padding: 3px 5px;
-        background-color: #00796B;
+    #answerButtonHolder {
+        text-align: center;
     }
 
-        #answer-question-link a {
-            text-decoration: none;
-            font-family: 'Quicksand', sans-serif;
-            font-size: 1rem;
-            color: white;
+        .answer-question-link {
+            background-color: #00796B;
+            -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         }
 
-.answers-container {
-    width: 80%;
-    margin: 5px 10% 50px 10%;
+            .answer-question-link a {
+                text-decoration: none;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 1rem;
+                color: white;
+            }
+
+#answers-container-headline {
+    width: 70%;
+    margin: 0 15% 25px 15%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    color: black;
+    opacity: .75;
 }
+
+.answers-container {
+    width: 60%;
+    margin: 5px 20% 50px 20%;
+}
+
 
     .answer-container-box {
         margin-bottom: 5px;
@@ -91,12 +109,23 @@
                 color: black;
                 font-size: 1rem;
                 opacity: .75;
+                -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
             }
 
     .answer-container-box h4 {
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         color: black;
-        font-size: 1.25rem;
+        font-size: 1rem;
+        opacity: .54;
+    }
+
+    .answer-container-box p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        color: black;
+        font-size: .75rem;
         opacity: .54;
     }
