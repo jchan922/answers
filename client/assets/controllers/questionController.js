@@ -10,7 +10,7 @@ app.controller('questionController', ['$scope', '$location', 'usersFactory', 'qu
             // console.log("**** Now useable as $scope variable", user);
         })
     };
-    // getCurrentUser();
+    getCurrentUser();
 
 // CREATE NEW Q =====================================================================
     $scope.new_question = function(){

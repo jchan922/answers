@@ -18,6 +18,7 @@ app.controller('dashboardController', ['$scope', '$location', 'usersFactory', 'q
     };
     getCurrentUser();
 
+// GET ALL QUESTIONS =======================================================================
     var getAllQuestions = function(){
         questionsFactory.getAllQuestions(function(questions){
             $scope.allQuestions = questions;

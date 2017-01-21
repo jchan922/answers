@@ -26,6 +26,9 @@ app.config(function ($routeProvider, $httpProvider) {
         .when('/dashboard',{
             templateUrl: 'partials/dashboard.html'
         })
+        .when('/profile/:id',{
+            templateUrl: 'partials/profile.html'
+        })
         .when('/show/:id',{
             templateUrl: 'partials/show.html'
         })

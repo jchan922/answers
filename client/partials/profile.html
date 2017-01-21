@@ -1,0 +1,34 @@
+<title>QA | My Profile</title>
+<div ng-controller="profileController">
+    <div class="navbar-container">
+        <ul id="navbar">
+            <div id="navbar-left">
+                <li><p>QA</p></li>
+            </div>
+            <div id="navbar-right">
+                <li><a href="#/dashboard">Dashboard</a></li>
+                <li><a href="#/profile/{{current_user._id}}">Profile</a></li>
+                <li><a href="#" ng-click="logout()">Log-Out</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <div class="profile-container">
+        <div class="headline-container">
+            <h1 id="headline-username">{{current_user.name}}'s Profile</h1>
+            <p class="headline-username-info"><b>Logged in as</b>: {{current_user.email}}</p>
+            <p class="headline-username-info"><b>Date Joined:</b> {{current_user.createdAt | date: 'medium'}}</p>
+        </div>
+
+        <div class="user-questions">
+            <h2 id="questions-asked">Questions Asked</h2>
+            <p ng-repeat="q in userQ"><a href="#/show/{{q._id}}">{{q.question}}</a></p>
+        </div>
+
+        <!-- <div class="user-answers">
+            <h2>Answers Given</h2>
+            <p ng-repeat="a in userA">{{a.answer}}</p>
+        </div> -->
+    </div>
+
+</div>

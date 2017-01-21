@@ -3,6 +3,15 @@ app.controller('answerController', ['$scope', '$location', '$routeParams', 'user
 // TEST FOR ANGULAR =========================================================================
     $scope.test = "This Angular Thing Working?";
 
+// GET CURRENT USER =======================================================================
+    var getCurrentUser = function(){
+        usersFactory.getCurrentUser(function(user){
+            $scope.current_user = user;
+            // console.log("**** Now useable as $scope variable", user);
+        })
+    };
+    // getCurrentUser();
+
 // GET QUESTION_ID =======================================================================
     var getCurrentQuestion = function(){
     console.log($routeParams.id);

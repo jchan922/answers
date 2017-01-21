@@ -82,6 +82,10 @@
                 opacity: .75;
             }
 
+            #answer-creator-id {
+                color: black;
+            }
+
         .answers-container-box-topbar-right {
             padding: 0;
             text-align: right;

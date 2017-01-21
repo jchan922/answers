@@ -54,8 +54,18 @@ app.factory('usersFactory', ['$http', '$routeParams', function($http, $routePara
         });
     };
 
+// GET PROFILE USERS Q AND A's =============================================================
+    factory.getUserQA = function(profile_id, callback){
+        $http.get('/profile/'+profile_id).then(function(returnedDataFromServer){
+            // console.log("**** Response from server is: ", returnedDataFromServer.data);
+            if(typeof(callback) == 'function'){
+                callback(returnedDataFromServer.data );
+            }
+        });
+    }
 
-// GET ALL USERS METHOD TO SERVER
+
+// GET ALL USERS METHOD TO SERVER =============================================================
     factory.get_all_users = function(callback){
         // console.log("***************** Got to CLIENT bookmarkFactory.js FACTORY.SESSION GET ALL USERS");
         $http.get('/user/show_all').then(function(returnedDataFromServer){
@@ -67,7 +77,7 @@ app.factory('usersFactory', ['$http', '$routeParams', function($http, $routePara
     };
 
 // GET PROFILE USER METHOD TO SERVER =============================================================
-    factory.getProfileUser = function(message_id,callback){
+    factory.getProfileUser = function(message_id, callback){
         // console.log("***************** Got to CLIENT usersFactory.js FACTORY.GET PROFILE USER");
         $http.get('/profile/'+message_id).then(function(returnedDataFromServer){
             console.log("Response from server is: ", returnedDataFromServer.data);

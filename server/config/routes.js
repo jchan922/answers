@@ -20,6 +20,7 @@ module.exports = function(app) {
     app.post('/logout', users.logout);
     app.get('/user', users.show_user);
     app.get('/user/show_all', users.show_all_users);
+    app.get('/profile/:_id', users.userQA);
     app.post('/question/create', questions.create);
     app.post('/answer/create/:_id', questions.answer_create);
     app.post('/answer/likes/:_id', questions.answer_likes);

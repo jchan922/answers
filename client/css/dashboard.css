@@ -23,6 +23,11 @@
         opacity: .87;
     }
 
+        #dashboard-welcome a {
+            color: #00BCD4;
+            opacity: .75;
+        }
+
     #dashboard-current-username {
         width: 90%;
         margin: 5px 5% 25px 5%;
@@ -179,6 +184,21 @@
         }
 
             #new-question-link a {
+                text-decoration: none;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 1rem;
+                color: white;
+            }
+
+        .new-question-link {
+            margin: 10px 0 0 0;
+            background-color: #E57373;
+            -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+
+            .new-question-link a {
                 text-decoration: none;
                 font-family: 'Quicksand', sans-serif;
                 font-size: 1rem;

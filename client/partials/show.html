@@ -2,9 +2,14 @@
 <div ng-controller="showController">
     <div class="navbar-container">
         <ul id="navbar">
-            <li><a href="#/dashboard">Home</a></li>
-            <li><p>QA</p></li>
-            <li><a href="#" ng-click="logout()">Log-Out</a></li>
+            <div id="navbar-left">
+                <li><p>QA</p></li>
+            </div>
+            <div id="navbar-right">
+                <li><a href="#/dashboard">Dashboard</a></li>
+                <li><a href="#/profile/{{current_user._id}}">Profile</a></li>
+                <li><a href="#" ng-click="logout()">Log-Out</a></li>
+            </div>
         </ul>
     </div>
 

@@ -96,7 +96,7 @@ module.exports = {
                     _id: user._id,
                     name: user.name,
                     email: user.email,
-                    bookmarks: user.bookmarks
+                    createdAt: user.createdAt
                 }
                 // console.log("***************** Found a match. Gathering user info. Going back to the front-end.".yellow);
                 // console.log("Session user:".green,session_user);
@@ -115,24 +115,17 @@ module.exports = {
     },
 
 // GRAB PROFILE USERS INFORMATION ===========================================================================
-    profile_id: function(req,res){
-        // console.log("***************** Got to SERVER users.js PROFILE ID ".yellow);
-        // console.log("***************** DATA TO FIND".yellow, req.params._id);
-        User.findOne({_id:req.params._id}).exec(function(err, user){
-            if(err){
-                res.sendStatus(401);
-            } else {
-                var session_user = {
-                    _id: user._id,
-                    name: user.name,
-                    email: user.email,
-                }
-                // console.log("***************** Found a match. Gathering user info. Going back to the front-end.".yellow);
-                // console.log(session_user);
-                res.json(session_user);
-            }
-        })
-    },
+
+userQA: function(req,res){
+    User.findOne({_id:req.params._id}).populate('questions').populate('answers').exec(function(err,qa){
+        if(err){
+            res.json(err);
+        } else {
+            res.json(qa)
+            // console.log("Going back to the front-end. ****".yellow);
+        }
+    })
+},
 
 
 
