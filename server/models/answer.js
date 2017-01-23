@@ -5,7 +5,6 @@
 //  *                                   *   //
 //  *************************************   //
 
-console.log('Server>Models>answer.js is running!!'.blue);
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
