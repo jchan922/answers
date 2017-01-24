@@ -12,7 +12,6 @@
 
 @media only screen and (min-width: 768px) { /* For Desktop, large screens */
 
-
     #dashboard-welcome {
         width: 90%;
         margin: 25px 5% 20px 5%;
@@ -97,6 +96,16 @@
             font-weight: normal;
             color: #009688;
             opacity: .87;
+        }
+
+        #question-created-at {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: .75rem;
+            font-weight: normal;
+            color: black;
+            opacity: .75;
         }
 
         th:nth-child(1){
@@ -233,6 +242,16 @@
             opacity: .87;
         }
 
+        #question-created-at {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: .75rem;
+            font-weight: normal;
+            color: black;
+            opacity: .75;
+        }
+
         th:nth-child(1){
             width: 50vw;
         }
@@ -349,6 +368,14 @@
             font-weight: normal;
             color: #009688;
             opacity: .87;
+        }
+
+        td a p {
+            font-family: 'Roboto', sans-serif;
+            font-size: .75rem;
+            font-weight: normal;
+            color: black;
+            opacity: .75;
         }
 
         th:nth-child(1){

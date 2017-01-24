@@ -30,7 +30,7 @@
             <th>Action</th>
         </tr>
         <tr ng-repeat="question in allQuestions | filter:filter_question">
-            <td><a href="#/show/{{question._id}}">{{question.question}}</a></td>
+            <td><a href="#/show/{{question._id}}">{{question.question}}</a><br><p id="question-created-at">{{question.createdAt | date: 'medium'}}</p></td>
             <td>{{question.answers.length}}</td>
             <td><button class="btn answer-question-link"><a id="table-answer-link" href="#/answer/{{question._id}}">Answer</a></button></td>
         </tr>
