@@ -104,7 +104,7 @@ module.exports = {
 
 // SHOW ALL Q  ==========================================================================================
     show_all: function(req,res){
-        Question.find().sort('-createdAt').exec(function(err,questions){
+        Question.find().sort('createdAt').exec(function(err,questions){
             if(err){
                 res.json(err);
             } else {
