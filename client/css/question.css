@@ -1,7 +1,7 @@
 .new-question-headline {
-    width: 90%;
-    margin: 15px 5% 5px 5%;
-    padding: 10px 0;
+    width: 80%;
+    margin: 25px 10% 0px 10%;
+    padding: 0;
 }
 
     .new-question-headline h1 {
@@ -14,9 +14,9 @@
     }
 
 .new-question-container {
-    width: 90%;
-    margin: 0 5% 25px 5%;
-    padding: 15px 0;
+    width: 80%;
+    margin: 25px 10% 0px 10%;
+    padding: 0;
 }
 
     .new-question-container p {

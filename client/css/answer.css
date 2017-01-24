@@ -1,7 +1,7 @@
 .new-answer-headline {
-    width: 90%;
-    margin: 25px 5% 0px 5%;
-    padding: 15px 0;
+    width: 80%;
+    margin: 25px 10% 0px 10%;
+    padding: 0;
 }
 
     .new-answer-headline h1{
@@ -15,18 +15,30 @@
     }
 
     .new-answer-headline h2{
-        margin: 0;
+        margin: 0 0 10px 0;
         padding: 0;
         font-family: 'Roboto', sans-serif;
-        font-weight: 300;
+        font-weight: 500;
+        font-style: italic;
         color: black;
-        opacity: .54;
+        opacity: .75;
         font-size: 1.5rem;
     }
 
+    .new-answer-headline h3{
+        margin: 0;
+        padding: 5px 0 10px 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        color: black;
+        opacity: .54;
+        font-size: 1.25rem;
+    }
+
 .new-answer-container {
-    width: 90%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 0px 10%;
     padding: 0;
 }
 
